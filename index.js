@@ -35,8 +35,11 @@ function mdLinks(path, options) {
     } else {
       reject('No existe el camino');
     }
-  }).then((respuesta) => {console.log(respuesta)});
+  });
   
 }
-const testPath = "/Users/macbookair/DEV003-md-links/README.md";
-mdLinks(testPath,{validate:true});
+module.exports = {
+mdLinks
+}
+//const testPath = "/Users/macbookair/DEV003-md-links/README.md";
+//mdLinks(testPath,{validate:true});
